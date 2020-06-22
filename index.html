@@ -1,87 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Social Media Dashboard</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Social Media Dashboard</h1>
+    <h3>
+      <p class="totalFollowers">Total Followers: 23,004</p>
+      <hr />
+      <p class="darkMode">Dark Mode</p>
+    </h3>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <ul class="followers">
+      <li class="facebook follower">
+        <p class="user">
+          <img src="images/icon-facebook.svg" alt="facebook" /> @nathanf
+        </p>
+        <p class="number">1987</p>
+        <p class="uppercaseFollowers">Followers</p>
+        <p class="numbersToday">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />12 Today
+        </p>
+      </li>
+      <li class="follower twitter">
+        <p class="user">
+          <img src="images/icon-twitter.svg" alt="twitter" /> @nathanf
+        </p>
+        <p class="number">1044</p>
+        <p class="uppercaseFollowers">Followers</p>
+        <p class="numbersToday">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />99 Today
+        </p>
+      </li>
+      <li class="follower instagram">
+        <p class="user">
+          <img src="images/icon-instagram.svg" alt="instagram" />@realnathanf
+        </p>
+        <p class="number">11k</p>
+        <p class="uppercaseFollowers">Followers</p>
+        <p class="numbersToday">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />1099 Today
+        </p>
+      </li>
+      <li class="follower youtube">
+        <p class="user">
+          <img src="images/icon-youtube.svg" alt="youtube" />Nathan F.
+        </p>
+        <p class="number">8239</p>
+        <p class="uppercaseFollowers">Subscribers</p>
+        <p class="numbersToday" style="color: hsl(356, 69%, 56%);">
+          <img src="images/icon-down.svg" alt="down" class="arrow" />144 Today
+        </p>
+      </li>
+    </ul>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <h1 id="overview">Overview - Today</h1>
+    <ul class="followers">
+      <li class="views">
+        <p class="text">
+          Page Views
+          <img src="images/icon-facebook.svg" alt="facebook" class="icons" />
+        </p>
+        <p class="num">87</p>
 
-  Dark Mode
+        <p class="procent">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />3%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Likes
+          <img src="images/icon-facebook.svg" alt="facebook" class="icons" />
+        </p>
+        <p class="num">52</p>
+        <p class="procent">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />2%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Likes
+          <img src="images/icon-instagram.svg" alt="instagram" class="icons" />
+        </p>
+        <p class="num">8227</p>
+        <p class="procent" style="color: hsl(356, 69%, 56%);">
+          <img src="images/icon-down.svg" alt="down" class="arrow" />2257%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Profile Views
+          <img src="images/icon-instagram.svg" alt="instagram" class="icons" />
+        </p>
+        <p class="num">52k</p>
+        <p class="procent">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />1375%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Retweets
+          <img src="images/icon-twitter.svg" alt="twitter" class="icons" />
+        </p>
+        <p class="num">117</p>
+        <p class="procent" style="color: hsl(356, 69%, 56%);">
+          <img src="images/icon-down.svg" alt="down" class="arrow" />303%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Likes
+          <img src="images/icon-twitter.svg" alt="twitter" class="icons" />
+        </p>
+        <p class="num">1282</p>
+        <p class="procent">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />53%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Likes
+          <img src="images/icon-youtube.svg" alt="youtube" class="icons" />
+        </p>
+        <p class="num">1297</p>
+        <p class="procent">
+          <img src="images/icon-up.svg" alt="up" class="arrow" />19%
+        </p>
+      </li>
+      <li class="views">
+        <p class="text">
+          Total Views<img
+            src="images/icon-youtube.svg"
+            alt="youtube"
+            class="icons"
+          />
+        </p>
+        <p class="num">1407</p>
+        <p class="procent" style="color: hsl(356, 69%, 56%);">
+          <img src="images/icon-down.svg" alt="down" class="arrow" />12%
+        </p>
+      </li>
+    </ul>
 
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Elena Paun</a>.
+    </div>
+  </body>
 </html>
